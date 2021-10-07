@@ -28,7 +28,7 @@ button, input {
 	text-align: center;
 }
 
-sup { 
+sup {
 	vertical-align: baseline; position: relative; top: -0.4em;
 	}
 
@@ -42,6 +42,10 @@ input {
 	margin: 30px;
 	padding: 40px 15px;
 	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center
 }
 
 /* filters block*/
@@ -49,7 +53,8 @@ input {
 	margin-top: 50px;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+
+	width: 1170px;
 }
 
 .rooms-filter-button{
@@ -62,6 +67,7 @@ input {
 
 .selected {
 	background: #70D24E;
+	color: #FFFFFF;
 }
 
 .filters-input {
@@ -100,9 +106,14 @@ input {
 
 /* items block */
 .cards-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, 270px);
+	max-width: 1170px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
 	gap: 30px;
+
 	margin-top: 45px;
 }
 
